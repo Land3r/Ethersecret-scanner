@@ -313,7 +313,12 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
         /// <param name="e">The event arguments.</param>
         private void viewLogsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Process.Start(@"logs");
+            Process.Start("logs");
+        }
+
+        private void viewKeysToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Process.Start("logs"+Path.DirectorySeparatorChar+"golden.txt");
         }
 
         /// <summary>

@@ -40,12 +40,6 @@
                             foundKey(privateKey, publicKey, elm.text());
                             return;
                         }
-                        if (Math.floor((Math.random() * 100) + 1) == 47)
-                        {
-                            golden = true;
-                            foundKey(privateKey, publicKey, elm.text());
-                            return;
-                        }
                         break;
                 }
 
@@ -61,7 +55,7 @@
     }
 
     function foundKey(privateKey, publicKey, amount) {
-        dotnetcallback.foundKey(privateKey, publicKey, amount);
+        dotnetcallback.foundKey(document.URL, privateKey, publicKey, amount);
     }
 
     setTimeout(parseAmmout, 2000);
