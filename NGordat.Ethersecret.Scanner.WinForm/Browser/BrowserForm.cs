@@ -316,13 +316,28 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
             Process.Start("logs");
         }
 
+        /// <summary>
+        /// Event handler for the View Console menu button
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event arguments.</param>
+        private void viewConsoleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            browser.ShowDevTools();
+        }
+
+        /// <summary>
+        /// Event handler for the View Keys menu button.
+        /// </summary>
+        /// <param name="sender">The event sender.</param>
+        /// <param name="e">The event arguments.</param>
         private void viewKeysToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Process.Start("logs"+Path.DirectorySeparatorChar+"golden.txt");
         }
 
         /// <summary>
-        /// Event handler for the Aboout menu button.
+        /// Event handler for the View Stats menu button.
         /// </summary>
         /// <param name="sender">The event sender.</param>
         /// <param name="e">The event arguments.</param>
