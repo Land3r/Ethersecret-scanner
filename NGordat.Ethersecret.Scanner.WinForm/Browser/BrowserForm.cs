@@ -94,11 +94,17 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
             if (!args.IsLoading && args.Browser.MainFrame.Url.StartsWith(ethersecret_base))
             {
                 string script;
+                string styles;
                 using(TextReader tr = new StreamReader(@"Scripts/Payload.js"))
 	            {
                     script = tr.ReadToEnd();
 	            }
+                using (TextReader tr = new StreamReader(@"Scripts/StylesInjector.js"))
+                {
+                    styles = tr.ReadToEnd();
+                }
 
+                browser.ExecuteScriptAsync(styles);
                 browser.ExecuteScriptAsync(script);
             }
 
@@ -343,7 +349,8 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
         /// <param name="e">The event arguments.</param>
         private void viewStatsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            throw new NotImplementedException("Feature is not currently implemented");
+            Stats stats = new Stats();
+            stats.Show();
         }
 
         #endregion Menu

@@ -43,13 +43,13 @@
             this.restartToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.viewLogsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewConsoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewKeysToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStatsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewConsoleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripContainer.ContentPanel.SuspendLayout();
             this.toolStripContainer.TopToolStripPanel.SuspendLayout();
             this.toolStripContainer.SuspendLayout();
@@ -180,52 +180,59 @@
             // startToolStripMenuItem
             // 
             this.startToolStripMenuItem.Name = "startToolStripMenuItem";
-            this.startToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.startToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.startToolStripMenuItem.Text = "Start";
             this.startToolStripMenuItem.Click += new System.EventHandler(this.startToolStripMenuItem_Click);
             // 
             // stopToolStripMenuItem
             // 
             this.stopToolStripMenuItem.Name = "stopToolStripMenuItem";
-            this.stopToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.stopToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.stopToolStripMenuItem.Text = "Stop";
             this.stopToolStripMenuItem.Click += new System.EventHandler(this.stopToolStripMenuItem_Click);
             // 
             // restartToolStripMenuItem
             // 
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             this.restartToolStripMenuItem.Click += new System.EventHandler(this.restartToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(122, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(140, 6);
             // 
             // viewLogsToolStripMenuItem
             // 
             this.viewLogsToolStripMenuItem.Name = "viewLogsToolStripMenuItem";
-            this.viewLogsToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.viewLogsToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.viewLogsToolStripMenuItem.Text = "View logs";
             this.viewLogsToolStripMenuItem.Click += new System.EventHandler(this.viewLogsToolStripMenuItem_Click);
+            // 
+            // viewConsoleToolStripMenuItem
+            // 
+            this.viewConsoleToolStripMenuItem.Name = "viewConsoleToolStripMenuItem";
+            this.viewConsoleToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.viewConsoleToolStripMenuItem.Text = "View console";
+            this.viewConsoleToolStripMenuItem.Click += new System.EventHandler(this.viewConsoleToolStripMenuItem_Click);
             // 
             // viewKeysToolStripMenuItem
             // 
             this.viewKeysToolStripMenuItem.Name = "viewKeysToolStripMenuItem";
-            this.viewKeysToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.viewKeysToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.viewKeysToolStripMenuItem.Text = "View keys";
             this.viewKeysToolStripMenuItem.Click += new System.EventHandler(this.viewKeysToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(122, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(140, 6);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitMenuItemClick);
             // 
@@ -250,13 +257,6 @@
             this.aboutToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
-            // 
-            // viewConsoleToolStripMenuItem
-            // 
-            this.viewConsoleToolStripMenuItem.Name = "viewConsoleToolStripMenuItem";
-            this.viewConsoleToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.viewConsoleToolStripMenuItem.Text = "View console";
-            this.viewConsoleToolStripMenuItem.Click += new System.EventHandler(this.viewConsoleToolStripMenuItem_Click);
             // 
             // BrowserForm
             // 
