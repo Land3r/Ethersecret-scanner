@@ -17,7 +17,7 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Components
             this.Text = String.Format("About {0}", AssemblyTitle);
             this.labelProductName.Text = AssemblyProduct;
             this.labelVersion.Text = String.Format("Version {0}", AssemblyVersion);
-            this.labelCopyright.Text = AssemblyCopyright;
+            this.labelSources.Text = AssemblySources;
             this.labelCompanyName.Text = AssemblyCompany;
             this.textBoxDescription.Text = AssemblyDescription;
         }
@@ -75,16 +75,11 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Components
             }
         }
 
-        public string AssemblyCopyright
+        public string AssemblySources
         {
             get
             {
-                object[] attributes = Assembly.GetExecutingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-                if (attributes.Length == 0)
-                {
-                    return "";
-                }
-                return ((AssemblyCopyrightAttribute)attributes[0]).Copyright;
+                return "https://github.com/Land3r/Ethersecret-scanner";
             }
         }
 
