@@ -44,7 +44,7 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
         /// </summary>
         /// <param name="privateKey">The raw private key.</param>
         /// <param name="publicKey">The raw publib key.</param>
-        /// <param name="amout">The amount of ether found.</param>
+        /// <param name="amount">The amount of ether found.</param>
         public void foundKey(string url, string privateKey, string publicKey, string amout)
         {
             keyFound++;
