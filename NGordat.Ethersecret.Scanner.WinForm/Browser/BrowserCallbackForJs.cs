@@ -43,14 +43,14 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
         /// Youpi! You found an ethereum account with some ethers.
         /// </summary>
         /// <param name="privateKey">The raw private key.</param>
-        /// <param name="publicKey">The raw publib key.</param>
-        /// <param name="amout">The amount of ether found.</param>
-        public void foundKey(string url, string privateKey, string publicKey, string amout)
+        /// <param name="publicKey">The raw public key.</param>
+        /// <param name="amount">The amount of ether found.</param>
+        public void foundKey(string url, string privateKey, string publicKey, string amount)
         {
             keyFound++;
             ILog log = LogManager.GetLogger("_____KEYFOUND_____");
             log.FatalFormat("A non empty account was found on page {0}", url);
-            log.FatalFormat("A non empty account was found. PrivateKey:'{0}', PublicKey:'{1}', Amount:'{2}'", privateKey, publicKey, amout);
+            log.FatalFormat("A non empty account was found. PrivateKey:'{0}', PublicKey:'{1}', Amount:'{2}'", privateKey, publicKey, amount);
 
             // Spawning new thread for MessageBox in order not to block parsing thread.
             Thread t = new Thread(() => MessageBox.Show("A non empty account was found !",
