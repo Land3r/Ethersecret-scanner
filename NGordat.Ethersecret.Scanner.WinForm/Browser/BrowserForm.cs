@@ -48,6 +48,10 @@ namespace NGordat.Ethersecret.Scanner.WinForm.Browser
 
             toolStripContainer.ContentPanel.Controls.Add(browser);
 
+            // Add a javascript dialog handler to skip Javascript Alerts.
+            JsDialogHandler jss = new JsDialogHandler();
+            browser.JsDialogHandler = jss;
+
             browser.LoadingStateChanged += OnLoadingStateChanged;
             browser.ConsoleMessage += OnBrowserConsoleMessage;
             browser.StatusMessage += OnBrowserStatusMessage;
