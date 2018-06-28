@@ -1,13 +1,40 @@
 ﻿(function () {
+    /**
+     * Gets or sets the current row index of the table.
+     */
     var rowCount = 0;
+
+    /**
+     * Gets or sets the current column index of the table.
+     */
     var columnCount = 0;
+
+    /**
+     * Gets or sets the current row private key retrieved.
+     */
     var privateKey = '';
+
+    /**
+     * Gets or sets the current row public key.
+     */
     var publicKey = '';
+
+    /**
+     * Gets whether or not any account with a non empty amount of ETH has been found.
+     */
     var golden = false;
+
+    /**
+     * Gets or sets whether or not the redirection to the next page has happened.
+     */
     var alreadyRedirected = false;
 
+    /**
+     * Gets or sets a counter for the number of parseAmmount count.
+     */
+    var timeoutCount = 0;
+
     function parseAmmout() {
-        console.log('Launched');
         alreadyRedirected = false;
         jQuery('table.table tbody tr').each(function () {
             rowCount++;
@@ -26,11 +53,14 @@
                         break;
                     case 3:
                         if (elm.text() == "") {
+
                             // At least one element is not loaded.
                             // Wait for elements to load.
-                            
                             if (alreadyRedirected == false) {
                                 setTimeout(parseAmmout, 2000);
+                            }
+                            else {
+                                setTimeout(parseAmmout, 10000);
                             }
                             alreadyRedirected = true;
                             return;
@@ -50,6 +80,7 @@
     }
 
     function goToNextPage() {
+        timeoutCount = 0;
         dotnetcallback.callNextPage();
     }
 
