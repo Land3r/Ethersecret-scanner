@@ -13,7 +13,7 @@ Note that the chances of actually finding an account are very tiny.
 
 The underlying browser used cannot be compiled using 'Any CPU' configuration. Please set the Active Configuration Platform to 'x86' or 'x64' depending on your architecture.
 
-Additionally, you will need Visual Studio 2013 or higher and .NET 4.5.2 to compile the solution (or you can upgrade it).
+Additionally, you will need Visual Studio 2017 or higher and .NET 4.5.2 to compile the solution (or you can upgrade it).
 
 # Run
 
